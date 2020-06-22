@@ -19,3 +19,7 @@ It also draws a circle at the mouse position because why not ;)
 
 There's also a theme, the DarkTheme. the controls themselves access these to render the background/mouseover/clicked backgrounds.
 but as of now, there's no border to the controls.
+
+### Info about listboxes
+The listbox contains a number, which, when you add items via the AddItem method, it adds the height of the given ListboxItem to that number. this allows the stacking of ListboxItems, so instead of having to manually set the Y position, the listbox automatically sets it as that number.
+This is why you must call the AddItem function to add items, and not Items.Add. this could be fixed later though.
